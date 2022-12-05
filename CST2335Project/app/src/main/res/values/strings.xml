@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CST2335Project</string>
+    <string name="search_string">Search</string>
+    <string name="ratingMessage">Rating:</string>
+    <string name="search_hint">Enter movie here</string>
+    <string name="type_message">Type:</string>
+    <string name="add_string">Add</string>
+    <string name="my_favourites_string">My Favourites</string>
+</resources>

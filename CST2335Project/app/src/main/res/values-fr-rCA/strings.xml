@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ratingMessage">Rating:</string>
+    <string name="app_name">CST2335Project</string>
+    <string name="search_string">Chercher</string>
+    <string name="send_button">Send</string>
+    <string name="type_message">Type:</string>
+    <string name="add_string">Ajouter</string>
+</resources>
