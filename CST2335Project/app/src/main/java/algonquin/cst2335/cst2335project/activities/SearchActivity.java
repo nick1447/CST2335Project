@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
@@ -59,6 +61,9 @@ public class SearchActivity extends AppCompatActivity {
         viewModel = new ViewModelProvider(this).get(SearchActivityViewModel.class);
         movies = viewModel.movies.getValue();
 
+        SharedPreferences savedMoviePrefs = getSharedPreferences("myData", Context.MODE_PRIVATE);
+        binding.movieSearch.setText(savedMoviePrefs.getString("movieName", ""));
+
         requestQueue = Volley.newRequestQueue(this);
 
         viewModel.selectedMovie.observe(this, (newMovieValue) -> {
@@ -110,6 +115,10 @@ public class SearchActivity extends AppCompatActivity {
         binding.searchButton.setOnClickListener(click -> {
             movies = new ArrayList<>();
             adapter.notifyDataSetChanged();
+
+            SharedPreferences.Editor editor = savedMoviePrefs.edit();
+            editor.putString("movieName", binding.movieSearch.getText().toString());
+            editor.apply();
 
             InputMethodManager keyboardManager = (InputMethodManager) this.getSystemService(Activity.INPUT_METHOD_SERVICE);
             keyboardManager.hideSoftInputFromWindow(this.getCurrentFocus().getWindowToken(), 0);

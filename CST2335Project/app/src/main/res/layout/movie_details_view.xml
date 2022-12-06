@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Plot:"
+        android:text="@string/plotMessage"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/fragMovieYear"
         app:layout_constraintTop_toBottomOf="@+id/fragMovieYear" />
@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-8dp"
-        android:text="Year"
+        android:text="@string/yearString"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/fragMovieTitle"
         app:layout_constraintTop_toBottomOf="@+id/fragMovieTitle" />
@@ -62,7 +62,7 @@
         android:id="@+id/fragMovieActorsHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Actors:"
+        android:text="@string/actorsString"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/fragMovieActors"
         app:layout_constraintStart_toStartOf="@+id/fragMoviePlotHeader" />
@@ -72,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:text="runtime"
+        android:text="@string/runtimeString"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/fragMovieYear"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Rated:"
+        android:text="@string/ratedString"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/fragMovieYear" />

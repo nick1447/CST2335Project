@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="algonquin.cst2335.cst2335project">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +15,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CST2335Project"
         tools:targetApi="31">
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.CST2335Project.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activities.SearchActivity"
             android:exported="false" />
