@@ -21,8 +21,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import algonquin.cst2335.cst2335project.R;
-import algonquin.cst2335.cst2335project.activities.MainActivity;
-import algonquin.cst2335.cst2335project.activities.SearchActivity;
 import algonquin.cst2335.cst2335project.databinding.ActivityHomeBinding;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
